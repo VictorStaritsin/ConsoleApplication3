@@ -11,6 +11,7 @@
 
 int main()
 {
+    setlocale(LC_ALL, "Russian");
 
 
     //вводим данный массива
@@ -21,10 +22,12 @@ int main()
     array.showArray();
     //создаем второй массив первый удаляем
     array.resizeArray(6);
+   //выводим второй массив
+    array.showArray();
     //вводим данный массива
     array.addArray();
-    //выводим второй массив
-    array.showArray();
     //сортировкуа массива
     array.sortArray();
+
+    array.showArray();
 }

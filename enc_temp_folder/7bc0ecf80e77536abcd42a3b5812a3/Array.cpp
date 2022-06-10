@@ -29,6 +29,8 @@ void Array::resizeArray(int new_size)
 		arr[i] = this->arr[i];
 	}
 	s = new_size;
+	this->arr = arr;
+	delete[]arr;
 }
 
 void Array::sortArray()
